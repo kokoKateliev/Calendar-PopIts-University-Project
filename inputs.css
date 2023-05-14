@@ -1,0 +1,47 @@
+div.input-group {
+  margin-bottom: 1.5rem;
+  margin-left: 20%;
+  position: relative;
+  width: 20.4375rem;
+}
+
+.input-underlined > input{
+	border: none;
+	border-bottom: 0.125rem solid rgba(19, 19, 21, 0.6);
+	width: 100%;
+	height: 2rem;
+	font-size: 1.0625rem;
+	padding-left: 0.875rem;
+	line-height: 147.6%;
+	padding-top: 0.825rem;
+	padding-bottom: 0.5rem;
+}
+
+.input-underlined > input:focus{
+	outline: none;
+}
+
+.input-label{
+	position: absolute;
+	top: 0.9375rem;
+	left: 0.875rem;
+	line-height: 147.6%;
+	color: rgba(19, 19, 21, 0.6);
+	transition: top .2s;
+}
+
+.input-underlined > input:hover{
+	background: rgba(73, 133, 224, 0.12);
+	border-color: var(--palette-first-blue);
+}
+
+.input-underlined > input:focus + .input-label,
+.input-underlined > input:valid + .input-label {
+	top: 0;
+	font-size: 0.9375rem;
+	margin-bottom: 32px;
+}
+
+.input-underlined > input {
+	background: #ffffff;
+}

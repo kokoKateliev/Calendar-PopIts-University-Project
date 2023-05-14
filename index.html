@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <script type="module" src="./index.js"></script>
+  <title>Welcome page</title>
+</head>
+<body>
+  <main>
+    <div class="welcome-text-div">
+      <h1>Welcome</h1>
+      <hr>
+      <p>Register or log in to continue to the Calendar</p>
+    </div>
+    <div class="buttons-div">
+      <button class="button" onclick="window.location='./Register/index.html'">Register</button>
+      <button class="button" onclick="window.location='./LogIn/index.html'">Log In</button>
+    </div>
+  </main>
+</body>
+<script>
+  function createBase() {
+    const isEvent = window.localStorage.getItem("events")
+    if(!isEvent){
+      const Events = []
+      const eventsObj = JSON.stringify(Events)
+      window.localStorage.setItem("events", eventsObj)
+    }
+  }
+  window.onload = createBase()
+</script>
+</html>
