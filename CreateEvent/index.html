@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script type="module" src="./index.js"></script>
+  <link rel="stylesheet" href="index.css">
+  <title>Create Event</title>
+</head>
+<body>
+  <nav>
+    <img class="home-img" onclick="window.location='../CalendarPage/index.html'" src="../images/icons8-home-page-64.png" alt="Home">
+    <section></section>
+    <ul class="navigation">
+      <li><button class="dropbtn" onclick="window.location='./index.html'">Create Event</button></li>
+      <li><button class="dropbtn" onclick="window.location='../FriendRequests/index.html'">Pending</button></li>
+      <li class="dropdown">
+        <button class="dropbtn">Profile</button>
+        <div class="dropdown-content">
+          <a class="aNav" href="../AddFriends/index.html">Events</a>
+          <a class="aNav" href="../AddFriends/index.html" >Friends</a>
+          <a class="aNav" onclick="clear()" href="../index.html">Log Out</a>
+        </div>
+      </li>
+    </ul>
+  </nav>
+  <main>
+    <form method="post">
+        <h1>Create Event</h1>
+        
+        <div class="container">
+          <div class="input-group">
+            <label class="input-underlined">
+              <input type="text" name="title" id="title" required>
+              <span class="input-label">Title of the Event</span>
+            </label>
+          </div>
+          <div class="dates">
+            <div>
+              <label for="meeting-time-start">Choose a starting time:</label>
+              <input type="datetime-local" id="meeting-time-start"
+              name="meeting-time-start" required>
+            </div>
+            <div>
+              <label for="meeting-time-start">Choose an end time:</label>
+              <input type="datetime-local" id="meeting-time-end"
+              name="meeting-time-end">
+            </div>
+          </div>
+          <label for="details"><b>Event Details:</b></label>
+          <textarea id="details" name="details" rows="15" cols="50"></textarea>
+          <div class="list-options">
+            <label class="choice-radio">
+              <input type="radio" name="eventPrivacy" value="public" id="public"/>
+              <span>Public Event</span>
+            </label>
+            <label class="choice-radio">
+              <input type="radio" name="eventPrivacy"  value="private" id="private" checked/>
+              <span>Private Event</span>
+            </label>
+          </div>
+          <div id="box">                                  
+            <label for="participants"><b>Add participants:</b></label>
+            <p>Warning you can add only people that are your friends</p>
+            <div class="input-group">
+              <label class="input-underlined">
+                <input type="text" name="participants" id="participants">
+                <span class="input-label">Email</span>
+              </label>
+            </div>  
+            <input type="button" id="addParticipant" class="button" value="Add">
+          </div>
+          <button type="submit" id="btn-creator" class="button final-button">Create Event</button>
+        </div>
+    </form>
+  </main>
+</body>
+</html>

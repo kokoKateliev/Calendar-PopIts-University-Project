@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script type="module" src="./index.js"></script>
+  <link rel="stylesheet" href="index.css">
+  <title>Calendar</title>
+</head>
+<body>
+  <nav>
+    <img class="home-img" onclick="window.location='./index.html'" src="../images/icons8-home-page-64.png" alt="Home">
+    <section></section>
+    <ul class="navigation">
+      <li><button class="dropbtn" onclick="window.location='../CreateEvent/index.html'">Create Event</button></li>
+      <li><button class="dropbtn" onclick="window.location='../FriendRequests/index.html'">Pending</button></li>
+      <li class="dropdown">
+        <button class="dropbtn">Profile</button>
+        <div class="dropdown-content">
+          <a class="aNav" href="../AddFriends/index.html">Events</a>
+          <a class="aNav" href="../AddFriends/index.html" >Friends</a>
+          <a class="aNav" onclick="clear()" href="../index.html">Log Out</a>
+        </div>
+      </li>
+    </ul>
+  </nav>
+  <div class="calendar-page">
+    <aside>
+      <section id="timeLineEvents">
+
+      </section>
+      <section id="friends">
+        <label for="frEmail"><b>If you want to check your friend's calendar, just type their email here:</b></label>
+        <div class="input-group">
+				<label class="input-underlined">
+				  <input type="text" name="frEmail" id="frEmail" required>
+				  <span class="input-label">Email</span>
+				</label>
+        </div>
+        <div id="friend-list"></div>
+      </section>
+    </aside>
+    <main>
+      
+      <div id="calPeriod">
+        <input id="calDay" type="number" min="1" max="31">
+        <select id="calMonth"></select>
+        <input type="number" id="calYear" min="1900">
+      </div>
+      
+      <div class="list-options">
+        <label class="choice-radio">
+          <input type="radio" name="clendar" value="monthly" id="monthly"/>
+          <span>Month</span>
+        </label>
+        <label class="choice-radio">
+          <input type="radio" name="clendar" value="weekly" id="weekly"/>
+          <span>Week</span>
+        </label>
+        <label class="choice-radio">
+          <input type="radio" name="clendar"  value="daily" id="daily"/>
+          <span>Day</span>
+        </label>
+      </div>
+      <section class="calendar">
+        <div id="dayGrid">
+          <div class="head">Hours</div>
+          <div class="head">Events</div>
+        </div>
+        <div id="dayContainer"></div>
+        <div id="weekGrid"></div>
+        <div id="monthGrid"></div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

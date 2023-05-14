@@ -1,0 +1,207 @@
+@import "../globalConsts.css";
+@import "../inputs.css";
+@import "./nav.css";
+@import "./radioButtons.css";
+
+body{
+  overflow-x: hidden;
+}
+
+#dayGrid, #dayContainer {
+  display: grid;
+  grid-template-columns: 10% 85% ; 
+  grid-gap: 0 5%;
+  align-content: center;
+}
+
+#weekGrid {
+  display: grid;
+  grid-template-columns: 10% 85%; 
+  grid-gap: 0 5%;
+}
+
+#monthGrid{
+  display: flex;
+  flex-direction: column;
+}
+
+#weekDays, #monthDays, .containerWeekCell{
+  display: grid;
+  grid-template-columns: 14.28% 14.28% 14.28% 14.28% 14.28% 14.28% 14.28%;
+  /* grid-gap: 10px; */
+}
+#monthDays{
+  grid-template-rows: 20% 50% 50% 50% 50% 50% 50%;
+}
+#monthGrid {
+  display: flex;
+}
+
+
+.calendar-page{
+  display: grid;
+  grid-template-columns: 18% 80%;
+  grid-gap: 2%;
+}
+
+aside{
+  padding: 5%;
+  border-right: 1px solid var(--palette-second-blue);
+  height: 88vh;
+ 
+}
+
+#timeLineEvents{
+  border-bottom:1px solid var(--palette-second-blue);
+  padding: 5% 0;
+}
+#timeLineContainer{
+  height: 300px;
+  overflow: auto;
+}
+h3{
+  margin: 8% 3% 0;
+  color: var(--palette-darker)
+}
+
+.time-line-text{
+  margin-bottom: 5%;
+}
+li{
+  list-style-type: none;
+}
+
+#friends{
+  padding: 5%;
+}
+
+#friends > input {
+  border: none;
+}
+
+div.input-group{
+  margin-left: 0;
+  margin-top: 5%
+}
+
+.input-underlined > input{
+  width: 50%;
+}
+
+.input-label{
+  top: 0.59rem;
+}
+.calendar{
+  /* width: 100%; */
+  /* background-color: blue; */
+  margin-right: 5%;
+  margin-top: 2%;
+  height: 70vh;
+  overflow: auto;
+}
+
+main{
+  padding: 1% 0;
+}
+
+#calPeriod{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#calDay, #calMonth, #calYear{
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid var(--palette-third-blue);
+  padding: 0.5% 2%;
+  font-size: 1rem;
+}
+
+.container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.cell{
+  box-shadow: -33px -34px 70px -74px rgba(0, 150, 210, 0.42) inset;
+  padding: 35% 20% 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cell > span{
+  position: relative;
+  top: 10px;
+}
+
+.head{
+  padding-bottom: 2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom:1px solid var(--palette-third-blue);
+}
+
+.containerCell{
+  display: flex;
+  align-items: center;
+  box-shadow: -33px -34px 70px -74px rgba(0, 150, 210, 0.42) inset;
+}
+.innerCell, .innerMDayCell{
+  margin-right: 3%;
+  padding-left: 2%;
+  border-left:2px solid var(--palette-darkest);
+}
+
+.containerWeekCell>div{
+  box-shadow: -33px -34px 70px -74px rgba(0, 150, 210, 0.42) inset;
+}
+
+.monthHeader{
+  align-self: center;
+  color: var(--palette-darker);
+  margin-bottom: 3%;
+  border-bottom: 2px solid var(--palette-darker);
+}
+
+.nonDay{
+  background-color: var(--palette-lighest);
+  
+}
+
+.dayCell{
+  display: flex;
+  border-bottom: 0.5px solid var(--palette-darkest);
+  align-content: center;
+  justify-content: center;
+  margin: 2.5% 0;
+  color: var(--palette-darker);
+  font-weight: bold;
+}
+.weekHeader{
+  display: flex;
+  color: var(--palette-first-blue);
+  justify-content: center;
+  padding-bottom: 10%;
+}
+
+.monthWeekDay{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: -33px -34px 70px -74px rgba(0, 150, 210, 0.42) inset;
+}
+
+.timelinecell > ul > li > span{
+  color: var(--palette-first-blue)
+}

@@ -1,0 +1,39 @@
+@import "../CalendarPage/nav.css";
+@import "../globalConsts.css";
+@import "../inputs.css";
+main{
+  display: flex;
+  justify-content: space-evenly;
+  padding: 5%;
+
+}
+
+h3{
+  color: var(--palette-darker);
+}
+main div{
+  width: 100%;
+}
+#requestsList{
+  width: 100%;
+}
+#requestsList > li{
+  margin: 3%;
+  width: 100%;
+  list-style-type: number;
+}
+
+#requestsList > li > span{
+  margin-right:  10%;
+}
+
+.button{
+  margin-left: 5%;
+  padding: 1% 2%
+}
+
+.empty{
+  color: var(--palette-darkest);
+  margin-top: 5%;
+}
+

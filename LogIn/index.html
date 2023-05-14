@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../globalConsts.css">
+  <link rel="stylesheet" href="../Register/index.css">
+  <script type="module" src="./index.js"></script>
+
+  <title>Sing in</title>
+</head>
+<body>
+  <form method="post">
+    <img src="../images/isometric_calendar_v1.png" alt="Picutre">
+    <div class="container">
+      <h1>Log In</h1>
+      <p id="paragraph">Please fill in this form to log in into your account.</p>
+      <hr>
+      <div class="input-group">
+				<label class="input-underlined">
+				  <input type="text" name="email" id="email" required>
+				  <span class="input-label">Email</span>
+				</label>
+			</div>
+      <div class="input-group">
+				<label class="input-underlined">
+				  <input type="password" name="psw" id="psw" required>
+				  <span class="input-label">Password</span>
+				</label>
+			</div>
+      <button class="button" type="submit" id="btn-logIn">Log in</button>
+      <p class="policy">Don't have an account? <a href="../Register/index.html">Register new account</a>.</p>
+
+    </div>
+    
+  </form>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script type="module" src="./index.js"></script>
+  <link rel="stylesheet" href="index.css">
+
+  <title>Document</title>
+</head>
+<body>
+  <nav>
+    <img class="home-img" onclick="window.location='../CalendarPage/index.html'" src="../images/icons8-home-page-64.png" alt="Home">
+    <section></section>
+    <ul class="navigation">
+      <li><button class="dropbtn" onclick="window.location='../CreateEvent/index.html'">Create Event</button></li>
+      <li><button class="dropbtn" onclick="window.location='../FriendRequests/index.html'">Pending</button></li>
+      <li class="dropdown">
+        <button class="dropbtn">Profile</button>
+        <div class="dropdown-content">
+          <a class="aNav" href="../AddFriends/index.html">Events</a>
+          <a class="aNav" href="../AddFriends/index.html" >Friends</a>
+          <a class="aNav" onclick="clear()" href="../index.html">Log Out</a>
+        </div>
+      </li>
+    </ul>
+  </nav>
+  <form method="post">
+    <div id="friend-list">
+      
+    </div>
+    <div class="container">
+      <h1>Add a friend</h1>
+      <div class="input-group">
+				<label class="input-underlined">
+				  <input type="text" name="email" id="email" >
+				  <span class="input-label">Email</span>
+				</label>
+        </div>
+      <button type="submit" class="button"id="btn-addFriend">Send invitation</button>
+    </div>
+  </form>
+  <div id="dropHereEvents" class="eventmanagement">
+    <h1>
+      Your Events: 
+    </h1>
+    <ul id="event-list"></ul>
+  </div>
+</body>
+</html>

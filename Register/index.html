@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../globalConsts.css">
+
+  <link rel="stylesheet" href="index.css">
+  <script type="module" src="./index.js"></script>
+
+  <title>Register</title>
+</head>
+<body>
+  <form method="post">
+    <img src="../images/Maestas_register_form_on_computer_isometric_transp.svg" alt="Picutre">
+    <div class="container">
+      <h1>Register</h1>
+      <p id="paragraph">Please fill in this form to create an account.</p>
+      <hr>
+      <div class="input-group">
+				<label class="input-underlined">
+				  <input type="text" name="email" id="email" required>
+				  <span class="input-label">Email</span>
+				</label>
+			</div>
+      <div class="input-group">
+				<label class="input-underlined">
+				  <input type="text" name="nickname" id="nickname" required>
+				  <span class="input-label">Nickname</span>
+				</label>
+			</div>
+      <div class="input-group">
+				<label class="input-underlined">
+				  <input type="password" name="psw" id="psw" required>
+				  <span class="input-label">Password</span>
+				</label>
+			</div>
+      <div class="input-group">
+				<label class="input-underlined">
+				  <input type="password" name="psw-conf" id="psw-conf" required>
+				  <span class="input-label">Confirm your Password</span>
+				</label>
+			</div>
+      <p class="policy">By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+  
+      <button class="button" type="submit" id="btn-register">Register</button>
+      <p class="policy">Already have an account? <a href="../LogIn/index.html">Sign in</a>.</p>
+    </div>
+    
+    
+  </form>
+</body>
+</html>

@@ -1,0 +1,48 @@
+@import "../inputs.css";
+@import "../globalConsts.css";
+@import "../CalendarPage/nav.css";
+
+div.input-group{
+  margin-left: 0;
+  margin-top: 3%
+}
+
+form{
+  display: flex;
+  justify-content: space-evenly;
+  padding: 5%;
+}
+
+
+
+#friend-list > ol > li {
+  margin: 10% 0;
+}
+
+.eventmanagement{
+  display: flex;
+  flex-direction: column;
+  margin: 1% 5%;
+}
+
+#event-list{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 10%;
+  margin-top: 4%; 
+}
+
+#event-list > li{
+  margin-right: 5%;
+  list-style-type: none;
+}
+
+h3{
+  color: var(--palette-darker);
+  margin-left: 5%;
+  margin-bottom: 5%;
+}
+
+#event-list > li > p{
+  margin: 2% 0;
+}

@@ -1,0 +1,93 @@
+@import "../CalendarPage/nav.css";
+@import "../globalConsts.css";
+@import "../CalendarPage/radioButtons.css";
+@import "../inputs.css";
+
+main{
+  padding: 5%;
+}
+main, form{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+}
+
+form{
+  height: 105vh;
+  width: 80%;
+  color: var(--palette-darker);
+
+}
+
+#box{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  visibility: hidden;
+  padding: 2%;
+  height: 70%;
+}
+
+h1{
+  color: var(--palette-darker);
+  padding-bottom: 5%;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+textarea{
+  margin-top: 1%;
+  padding: 1%;
+  font-size: 1rem;
+  border: 1px solid var(--palette-first-blue)
+}
+
+div.input-group{
+  margin-left: 0;
+  /* margin-top: 5% */
+}
+
+.input-label{
+  top: 0.59rem;
+}
+
+#meeting-time-start, #meeting-time-end{
+  width: 60%;
+  padding: 2%;
+  border: none;
+  border-bottom: 1px solid var(--palette-first-blue);
+  margin-bottom: 5%;
+  font-size: 1rem;
+}
+
+.dates{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.dates > div{
+  width: 50%;
+
+}
+
+
+#participants{
+  width: 70%;
+}
+
+.button{
+  padding: 1% 2%;
+  width: 20%;
+}
+
+.final-button{
+  display: block;
+  margin: 2% auto;
+  font-size: 1.5em;
+  width: 30%;
+}
