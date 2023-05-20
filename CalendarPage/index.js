@@ -17,15 +17,17 @@ function callCalendar(user){
 
   const sortedUserEvents = userEvents.sort((ev1, ev2) => (ev1.start > ev2.start) ? 1 : (ev1.start < ev2.start) ? -1 : 0)
   const now = new Date()
+  console.log(now.getTime())
   const todaysEvents = sortedUserEvents.filter(event =>{
-    if(event.start >= now.toISOString()){
+    const eventStart = new Date(event.start)
+    if(eventStart.getTime() >= now.getTime()){
       return true
     }
     return false
   })
 
   document.getElementById("timeLineEvents").innerHTML = `
-    <p class="time-line-text">TimeLine for today</p>
+    <p class="time-line-text">Time line for today</p>
     <div id="timeLineContainer"></div>
   `
   const timeLContainer = document.getElementById("timeLineContainer")
