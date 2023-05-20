@@ -17,10 +17,10 @@ function callCalendar(user){
 
   const sortedUserEvents = userEvents.sort((ev1, ev2) => (ev1.start > ev2.start) ? 1 : (ev1.start < ev2.start) ? -1 : 0)
   const now = new Date()
-  console.log(now.getTime())
+  const nowDate = now.toISOString().slice(0,10)
   const todaysEvents = sortedUserEvents.filter(event =>{
     const eventStart = new Date(event.start)
-    if(eventStart.getTime() >= now.getTime()){
+    if(eventStart.getTime() >= now.getTime() && event.start.slice(0,10) === nowDate){
       return true
     }
     return false
