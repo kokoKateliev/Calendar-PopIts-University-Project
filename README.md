@@ -1,6 +1,6 @@
 # Popits - Your Daily Calender Adviser 
 Front-End-Course-University-Project-2023
-https://fmi-popits.firebaseapp.com/ - hosted site
+https://fmi-popits.firebaseapp.com/ - hosted by FireBase
 ----------------------------------------
 !!! This is Entry level project to JavaScript. Using Local Storage as DataBase Management.
 FireBase is used only for account managements. Storing user emails and hashing passwords.
