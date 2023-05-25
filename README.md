@@ -1,5 +1,6 @@
 # Popits - Your Daily Calender Adviser 
 Front-End-Course-University-Project-2023
+https://fmi-popits.firebaseapp.com/ - hosted site
 ----------------------------------------
 The project is similar to Google Maps. Main functionalities are calendar for month, week
 and day where events are displayed for the user.Upcoming events for the day are also shown. The
