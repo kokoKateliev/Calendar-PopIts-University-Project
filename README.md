@@ -1,5 +1,4 @@
 Popits - Your Daily Calender Adviser
-
 Front-End-Course-University-Project-2023
 https://fmi-popits.firebaseapp.com/ - hosted by FireBase
 -------------------------------------------
