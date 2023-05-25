@@ -5,11 +5,7 @@ https://fmi-popits.firebaseapp.com/ - hosted site
 !!! This is Entry level project to JavaScript. Using Local Storage as DataBase Management.
 FireBase is used only for account managements. Storing user emails and hashing passwords.
 
-The project is similar to Google Maps. Main functionalities are calendar for month, week
-and day where events are displayed for the user.Upcoming events for the day are also shown. The
- friends part also allows visiting the calendars of the user's friends.
- A user can create events that are public or private to their calendar. In case of public status, it would be possible for a user to send invitations to their friend list. Friends can accept/reject the invitation - if they accept it, the event will also appear in their calendar. Friend requests can also be accepted or declined.
-Each user has the ability to check the calendar of their friends, what events they have coming up. It mainly uses FireBase database for user accounts - email and password, and the rest of the information is kept in localstorage.
+The project is similar to Google Maps. Main functionalities are calendar for month, week and day where events are displayed for the user. Upcoming events for the day are also shown. The friends part also allows visiting the calendars of the user's friends. A user can create events that are public or private to their calendar. In case of public status, it would be possible for a user to send invitations to their friend list. Friends can accept/reject the invitation - if they accept it, the event will also appear in their calendar. Friend requests can also be accepted or declined. Each user has the ability to check the calendar of their friends, what events they have coming up. It mainly uses FireBase database for user accounts - email and password, and the rest of the information is kept in localstorage.
 
 Main logic for calendar generator
 1. Getting how many days are there in the month and for each month max days in array.
