@@ -15,4 +15,12 @@ Main logic for calendar generator
     1. Getting how many days are there in the month and for each month max days in array.
     2. Setting for each day of the month - which day of the week it is. (Indexing) 
     3. Generating "blank blocks" to match the days of the week.
-    4. Generating HTML blocks and CSS style into DOM.
+    4. Generating Events per day.
+    5. Generating HTML blocks and CSS style into DOM.
+
+
+
+Future Updates:
+1. Making it full responsive;
+2. FireBase full storage management;
+3. Main menu design update;
