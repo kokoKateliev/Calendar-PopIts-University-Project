@@ -2,6 +2,9 @@
 Front-End-Course-University-Project-2023
 https://fmi-popits.firebaseapp.com/ - hosted site
 ----------------------------------------
+!!! This is Entry level project to JavaScript. Using Local Storage as DataBase Management.
+FireBase is used only for account managements. Storing user emails and hashing passwords.
+
 The project is similar to Google Maps. Main functionalities are calendar for month, week
 and day where events are displayed for the user.Upcoming events for the day are also shown. The
  friends part also allows visiting the calendars of the user's friends.
